@@ -1,6 +1,6 @@
 # new-portfolio
 
-> Portfolio setup and mobile first
+> Portfolio setup, mobile version
 
 ## Built With
 
