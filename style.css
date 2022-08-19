@@ -4,6 +4,7 @@ body {
   background-color: #191765;
   margin: 0;
   color: white;
+  z-index: -1;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -89,6 +90,7 @@ nav {
 
 main {
   margin-top: 50px;
+  position: relative;
 }
 
 article h1 {
@@ -98,7 +100,6 @@ article h1 {
   font-size: 40px;
   text-align: center;
   color: #7d73fc;
-  font-family: 'Roboto';
   margin: 0;
 }
 
@@ -115,9 +116,8 @@ hr {
 .description p {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'Roboto';
   color: #c8c8d4;
-  margin: 15px;
+  margin: 35px;
 }
 
 .frame {
@@ -143,8 +143,13 @@ hr {
   padding-top: 0;
 }
 
+main figure {
+  position: absolute;
+  margin: 0;
+  bottom: 85%;
+}
+
 article h3 {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -153,10 +158,13 @@ article h3 {
   color: #9490ff;
 }
 
+.headlines {
+  margin-top: 80px;
+}
+
 .headlines h3 {
   display: flex;
   font-style: normal;
-  font-family: 'Roboto';
   font-size: 32px;
   align-items: center;
   justify-content: center;
@@ -181,6 +189,13 @@ article h3 {
   color: f5f5ff;
   padding: 30px;
   padding-top: 0;
+}
+
+.frame figure {
+  position: absolute;
+  margin: 0;
+  bottom: 55%;
+  left: 78%;
 }
 
 .skills ul {
