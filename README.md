@@ -1,4 +1,4 @@
-# new-portfolio
+# new portfolio
 
 > Portfolio setup, mobile version
 
