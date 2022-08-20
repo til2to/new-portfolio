@@ -10,16 +10,6 @@ body {
 
 /* HEADER OR TOOLBAR */
 
-figure a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  text-align: center;
-  font-style: normal;
-  padding: 10px;
-  position: absolute;
-}
-
 nav li a {
   text-decoration: none;
   font-style: normal;
@@ -38,10 +28,25 @@ nav ul li {
 ul {
   flex: 1;
   display: flex;
+  justify-content: space-between;
 }
 
-nav {
+header {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+a h2 {
+  margin: 20px;
 }
 
 /* media */
@@ -53,9 +58,6 @@ nav {
     justify-content: flex-end;
   }
 
-  nav figure img {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -68,29 +70,20 @@ nav {
     overflow-x: hidden;
   }
 
+  nav img {
+    margin-right: 5px;
+  }
+
   nav ul {
     display: none;
   }
-
-  nav figure {
-    display: flex;
-    flex-direction: column;
-    flex: 0.5;
-    margin-right: 15px;
-    align-items: flex-end;
-  }
-
-  nav figure img {
-    background-color: #fff;
-    height: 2px;
-    width: 33px;
-    margin-top: 8px;
-  }
 }
 
-main {
-  margin-top: 50px;
-  position: relative;
+.ellipse_18 {
+  background-image: url('Ellipse_18.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
 }
 
 article h1 {
@@ -143,11 +136,7 @@ hr {
   padding-top: 0;
 }
 
-main figure {
-  position: absolute;
-  margin: 0;
-  bottom: 85%;
-}
+/*  */
 
 article h3 {
   font-style: normal;
@@ -159,7 +148,7 @@ article h3 {
 }
 
 .headlines {
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .headlines h3 {
@@ -171,6 +160,15 @@ article h3 {
   text-align: center;
   color: #edecff;
   font-weight: 500;
+}
+
+.back {
+  background-image: url('Ellipse_19.png');
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  left: 80%;
 }
 
 .frameworks {
@@ -189,13 +187,6 @@ article h3 {
   color: f5f5ff;
   padding: 30px;
   padding-top: 0;
-}
-
-.frame figure {
-  position: absolute;
-  margin: 0;
-  bottom: 55%;
-  left: 78%;
 }
 
 .skills ul {
@@ -233,6 +224,7 @@ article h3 {
 .social-media ul li {
   padding: 5px;
   margin: 5px;
+  margin-bottom: 0;
 }
 
 .work {
